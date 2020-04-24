@@ -7,6 +7,6 @@
 	$price = $_POST['price'];
 	
 	
-	$connect->query("UPDATE tbl_phone SET phone_name='".$phone_name."', price='".$price.' WHERE id=". $id);
+	$connect->query("UPDATE tbl_phone SET phone_name='".$phone_name."', price='".$price."' WHERE id=". $id);
 
 ?>
