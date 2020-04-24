@@ -20,7 +20,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   Future<List> getData() async {
-    final response = await http.get("http://10.0.2.2/xphone/get_phone.php");
+    final response = await http.get("http://munir.galih.pw/xphone/get_phone.php");
     return json.decode(response.body);
   }
 
@@ -77,7 +77,7 @@ class ItemList extends StatelessWidget {
 
               child: new ListTile(
                 title: new Text(list[i]['phone_name']),
-                leading: new Icon(Icons.widgets),
+                leading: new Icon(Icons.smartphone,color: Colors.yellow,),
                 subtitle: new Text("Harga : ${list[i]['price']}"),
               ),
             ),

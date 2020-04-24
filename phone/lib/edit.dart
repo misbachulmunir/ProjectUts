@@ -17,7 +17,7 @@ class _EditDataState extends State<EditData> {
   TextEditingController controllerPrice;
  
   void editData() {
-    var url = "http://10.0.2.2/xphone/edit_phone.php";
+    var url = "http://munir.galih.pw/xphone/edit_phone.php";
     http.post(url, body: {
       "id": widget.list[widget.index]['id'],
       "phone_name": controllerName.text,
